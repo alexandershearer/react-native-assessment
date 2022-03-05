@@ -21,15 +21,15 @@ export default function App() {
           let iconName;
           if (route.name === 'Bands') {
             iconName = focused
-              ? color = 'tomato' : color = '#fff';
+              ? color = 'tomato' : color = '#999';
             iconName = 'volume-high-outline';
           } else if (route.name === 'Stats') {
             iconName = focused
-              ? color = 'tomato' : color = '#fff';
+              ? color = 'tomato' : color = '#999';
             iconName = 'stats-chart-outline';
           } else if (route.name === 'Styles') {
             iconName = focused
-              ? color = 'tomato' : color = '#fff';
+              ? color = 'tomato' : color = '#999';
             iconName = 'reader-outline';
           }
 
@@ -37,7 +37,7 @@ export default function App() {
           return <Ionicons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: 'tomato',
-        tabBarInactiveTintColor: '#fff',
+        tabBarInactiveTintColor: '#999',
         tabBarActiveBackgroundColor: '#111',
         tabBarInactiveBackgroundColor: '#000',
         tabBarStyle: {
